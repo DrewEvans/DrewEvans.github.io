@@ -455,7 +455,6 @@ article {
 
 .small-card-container {
     display: flex;
-    //
     height: 350px;
 }
 
@@ -485,15 +484,11 @@ article {
 
 }
 
-
-
 footer {
     background-color: #f2f2f2;
     width: 100%;
     position: absolute;
-
     height: auto;
-
 }
 
 .footer-container {
@@ -536,12 +531,10 @@ footer {
     margin-top: .75em;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
     .search-card {
-
         height: 230px;
         width: 270px;
-
     }
 }
 
@@ -574,7 +567,6 @@ footer {
 
     .sm-card-container {
         display: flex;
-        align-items: space-evenly;
         width: 70%;
     }
 
@@ -650,7 +642,6 @@ footer {
 
     .sm-card-container {
         display: flex;
-        align-items: space-evenly;
         width: 70%;
     }
 }
