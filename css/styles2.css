@@ -109,20 +109,14 @@ input[type=search] {
     border-bottom-right-radius: 10px;
 }
 
-.search-button .tab-desk {
+.search-button span {
     display: flex;
     font-weight: 500;
     padding: .54em;
     color: #f2f2f2;
 }
 
-.search-button .mob {
-    visibility: hidden;
-    display: none;
-    font-weight: 500;
-    padding: .54em;
-    color: #f2f2f2;
-}
+
 
 .search-filters {
     display: flex;
@@ -150,7 +144,6 @@ input[type=search] {
     border-radius: 20px;
     margin: .5em .5em;
     padding-left: 2.5em;
-
 }
 
 .filter-content {
@@ -706,19 +699,6 @@ footer {
         align-self: center;
     }
 
-    .search-button .tab-desk {
-        display: none;
-        visibility: hidden;
-    }
-
-    .search-button .mob {
-        display: flex;
-        font-weight: 500;
-        visibility: visible;
-        width: 25px;
-        padding: .5em;
-        color: #f2f2f2;
-    }
 
     .filter-button {
         margin: .3em;
