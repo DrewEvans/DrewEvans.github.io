@@ -109,8 +109,16 @@ input[type=search] {
     border-bottom-right-radius: 10px;
 }
 
-.search-button>span {
+.search-button .tab-desk {
     display: flex;
+    font-weight: 500;
+    padding: .54em;
+    color: #f2f2f2;
+}
+
+.search-button .mob {
+    visibility: hidden;
+    display: none;
     font-weight: 500;
     padding: .54em;
     color: #f2f2f2;
@@ -133,6 +141,8 @@ input[type=search] {
 
 
 .filter-button {
+    display: flex;
+    justify-content: flex-start;
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -156,7 +166,7 @@ input[type=search] {
     border-radius: 50%;
     height: 38px;
     width: 38px;
-    transform: translateX(-2.9em);
+    transform: translateX(-3em);
 }
 
 .filter-icon>span {
@@ -168,19 +178,16 @@ input[type=search] {
 
 .filter>span {
     display: flex;
-
     font-size: 1em;
-    padding: .4em 0em;
+    padding: .4em .6em;
     background-color: white;
+    transform: translateX(-5px);
 }
-
-
-
 
 .infos {
     display: flex;
     width: 100%;
-    margin: 1em 0em;
+    margin: .5em 0em;
 }
 
 .infos>p {
@@ -539,16 +546,50 @@ footer {
 }
 
 @media screen and (min-width: 1024px) and (max-width:1200px) {
+    section {
+
+        width: 95%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin: 1em;
+
+    }
+
+    aside {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 95%;
+        margin: 1em;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-right: 0;
+
+    }
+
     .search-card {
 
         height: 230px;
-        width: 230px;
+        width: 240px;
         margin: .5em;
+    }
+
+    .trending-product-header {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .trending-product-container {
+
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .clickable-trending-card {
         height: 150px;
-        margin: 1em;
+        width: 300px;
     }
 
     .activity-card-lg-sm {
@@ -596,13 +637,13 @@ footer {
         justify-content: flex-start;
         align-content: flex-start;
         width: 95%;
-        background-color: #f2f2f2;
+
         border-radius: 15px;
         float: left;
     }
 
     .trending-product-container {
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
@@ -610,6 +651,13 @@ footer {
 
     .clickable-trending-card {
         width: 300px;
+        margin: .5em
+    }
+
+    .search-card {
+        height: 230px;
+        width: 220px;
+        margin: .5em;
     }
 
     .search-filters {
@@ -636,23 +684,58 @@ footer {
         border-top-right-radius: 15px;
     }
 
-    .activity-container {
-        justify-content: space-around;
-    }
+    .activity-container {}
 
     .sm-card-container {
         display: flex;
-        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+
+        flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width:767px) {
+
+    .nav-container {}
+
+    .nav-container>ul>li {
+        flex-direction: row-reverse;
+        align-self: center;
+    }
+
+    .search-button .tab-desk {
+        display: none;
+        visibility: hidden;
+    }
+
+    .search-button .mob {
+        display: flex;
+        font-weight: 500;
+        visibility: visible;
+        width: 25px;
+        padding: .5em;
+        color: #f2f2f2;
+    }
+
+    .filter-button {
+        margin: .3em;
+    }
+
+    .infos {
+        margin: 0;
+    }
+
     section {
         display: inline-flex;
-        width: 90%;
+        width: 100%;
         background-color: #f2f2f2;
         border-radius: 15px;
         float: right;
+        position: relative;
+        margin: 0;
     }
 
     aside {
@@ -666,16 +749,29 @@ footer {
         float: left;
     }
 
+    .trending-product-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .search-card {
         height: 230px;
-        width: 95%;
+        width: 230px;
         margin: .5em;
     }
 
     .clickable-trending-card {
-        height: 100px;
-        width: 90%;
+        height: 110px;
+        width: 320px;
         margin: 1em;
+    }
+
+    .trending-product-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
 
     .search-filters {
@@ -688,7 +784,7 @@ footer {
         flex-direction: column;
         width: 240px;
         height: 150px;
-        margin: 1.5em;
+        margin: .5em;
         border-radius: 15px;
         box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.42);
     }
@@ -703,6 +799,7 @@ footer {
     }
 
     .footer-container {
+        flex-direction: column;
         flex-wrap: wrap;
     }
 
