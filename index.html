@@ -1,243 +1,139 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>OhMyFood</title>
+  <meta charset="utf-8" />
+  <title>Reservation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/css/modal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="loading-wrapper">
-        <span class="upper-loader"></span>
-        <span class="center-left-loader"></span>
-        <span class="center-right-loader"></span>
-        <span class="bottom-loader"></span>
+  <div class="topnav" id="myTopnav">
+    <div class="header-logo">
+      <img alt="logo" src="/images/Logo.png" width="auto" height="auto" />
     </div>
-    <header>
-        <div class="logo-container">
-            <div class="logo-img">
-                <a href="index.html">
-                    <img src="/images/logo/ohmyfood@2x.svg" alt="oh-my-food">
-                </a>
-            </div>
-        </div>
-        <div class="current-location">
-            <div class="map-icon">
-                <span>
-                    <i class="fas fa-map-marker-alt"></i>
-                </span>
-            </div>
-            <div class="location-name">
-                <span>Paris, Belleville</span>
-            </div>
-        </div>
-        <div class="blurb-header">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Decouvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <a href="#"><span>Explorer nos restaurants</span></a>
-        </div>
-    </header>
-    <section>
-        <div class="functionality">
-            <div class="functionality-header">
-                <h2>Fonctionnement</h2>
-            </div>
-            <div class="user-steps">
-                <div class="user-step">
-                    <div class="step-number">
-                        <span>1</span>
-                    </div>
-                    <div class="step-information">
-                        <div class="step-icon">
-                            <span>
-                                <i class="fas fa-mobile-alt"></i>
-                            </span>
-                        </div>
-                        <div class="step-explanation">
-                            <span>Choisissez un restaurant</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user-steps">
-                <div class="user-step">
-                    <div class="step-number">
-                        <span>2</span>
-                    </div>
-                    <div class="step-information">
-                        <div class="step-icon">
-                            <span>
-                                <i class="fas fa-list-ul"></i>
-                            </span>
-                        </div>
-                        <div class="step-explanation">
-                            <span>Composez votre menu</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user-steps">
-                <div class="user-step">
-                    <div class="step-number">
-                        <span>3</span>
-                    </div>
-                    <div class="step-information">
-                        <div class="step-icon">
-                            <span>
-                                <i class="fas fa-store"></i>
-                            </span>
-                        </div>
-                        <div class="step-explanation">
-                            <span>Degustez au restaurant</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <main>
-        <div class="restaurant-container">
-            <div class="restaurant-header">
-                <h2>Restaurants</h2>
-            </div>
-            <a href="/pages/La-palette-du-goût.html">
-                <div class="restaurant-card">
-                    <div class="restaurant-img">
-                        <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#">
-                        <div class="tags">
-                            <span>Nouveau</span>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <div class="restaurant-details">
-                            <div class="title">
-                                <h3>La palette du goût</h3>
-                            </div>
-                            <div class="location">
-                                <span>Ménilmontant</span>
-                            </div>
-                        </div>
-                        <div class="user-favourites">
+    <div class="main-navbar">
 
-                            <span>
-                                <i class="fas fa-heart fa-lg"></i>
-                            </span>
+      <a href="#" class="active"><span>Accueil</span></a>
+      <a href="#"><span>Détails de l'évènement</span></a>
+      <a href="#"><span>À propos</span></a>
+      <a href="#"><span>Contact</span></a>
+      <a href="#"><span>Évènements passés</span></a>
+      <a href="javascript:void(0);" class="icon" onclick="editNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
 
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="/pages/La-note-enchantée.html">
-                <div class="restaurant-card">
-                    <div class="restaurant-img">
-                        <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#">
-                        <div class="tags">
-                            <span>Nouveau</span>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <div class="restaurant-details">
-                            <div class="title">
-                                <h3>La note enchantée</h3>
-                            </div>
-                            <div class="location">
-                                <span>Charonne</span>
-                            </div>
-                        </div>
-                        <div class="user-favourites">
-                            <span>
-                                <i class="fas fa-heart fa-lg"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="/pages/À-la-française.html">
-                <div class="restaurant-card">
-                    <div class="restaurant-img">
-                        <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#">
-                        <div class="tags">
-                            <span>Nouveau</span>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <div class="restaurant-details">
-                            <div class="title">
-                                <h3>À la française</h3>
-                            </div>
-                            <div class="location">
-                                <span>Cité Rouge</span>
-                            </div>
-                        </div>
-                        <div class="user-favourites">
-                            <span>
-                                <i class="fas fa-heart fa-lg"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="/pages/Le-délice-des-sens.html">
-                <div class="restaurant-card">
-                    <div class="restaurant-img">
-                        <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="#">
-                        <div class="tags">
-                            <span>Nouveau</span>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <div class="restaurant-details">
-                            <div class="title">
-                                <h3>Le délice des sens</h3>
-                            </div>
-                            <div class="location">
-                                <span>Folie-Méricourt</span>
-                            </div>
-                        </div>
-                        <div class="user-favourites">
-                            <span>
-                                <i class="fas fa-heart fa-lg"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+  <main>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-headline">
+          Marathon national<br>
+          de jeux vidéos
+        </h1>
+        <p class="hero-text">
+          Vous aimez jouer ? Notre prochain évènement gaming est ouvert
+          aux réservations... Places limitées !
+        </p>
+        <button class="btn-signup modal-btn">
+          je m'inscris
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="./images/bg_img.jpg" alt="img" />
+      </div>
+      <button class="btn-signup modal-btn">
+        je m'inscris
+      </button>
+    </div>
+
+    <div class="bground">
+      <div class="content">
+        <span class="close"></span>
+        <div class="modal-body">
+          <form class="signupForm" name="reserve" action="index.html" method="get">
+            <div class="input-container">
+              <div class="formData" data-error="true">
+                <label>Prénom*</label><br>
+                <input class="text-control" type="text" id="first" name="first" minlength="2" /><br>
+              </div>
+              <div class="formData">
+                <label>Nom*</label><br>
+                <input class="text-control" type="text" id="last" name="last" minlength="2" /><br>
+              </div>
+              <div class="formData">
+                <label>E-mail*</label><br>
+                <input class="text-control" type="email" id="email" name="email" /><br>
+              </div>
+              <div class="formData">
+                <label>Date de naissance*</label><br>
+                <input class="text-control" type="date" id="birthdate" name="birthdate" min="1900-01-01" required /><br>
+              </div>
+              <div class="formData">
+                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+              </div>
+              <p class="text-label">Quelle ville ?*</p>
+              <div class="formData">
+                <input class="checkbox-input city-radio" type="radio" id="location1" name="location" value="New York" />
+                <label class="checkbox-label" for="location1">
+                  <span class="checkbox-icon"></span>
+                  New York</label>
+                <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
+                <label class="checkbox-label" for="location2">
+                  <span class="checkbox-icon"></span>
+                  San Francisco</label>
+                <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle" />
+                <label class="checkbox-label" for="location3">
+                  <span class="checkbox-icon"></span>
+                  Seattle</label>
+                <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago" />
+                <label class="checkbox-label" for="location4">
+                  <span class="checkbox-icon"></span>
+                  Chicago</label>
+                <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
+                <label class="checkbox-label" for="location5">
+                  <span class="checkbox-icon"></span>
+                  Boston</label>
+                <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
+                <label class="checkbox-label" for="location6">
+                  <span class="checkbox-icon"></span>
+                  Portland</label>
+              </div>
+              <div class="formData">
+                <input class="checkbox-input terms" type="checkbox" id="checkbox1" name="terms" checked />
+                <label class="checkbox2-label" for="checkbox1" required>
+                  <span class="checkbox-icon"></span>
+                  J'ai lu et accepté les conditions d'utilisation.*
+                </label>
+                <br>
+                <input class="checkbox-input notify" type="checkbox" id="checkbox2" name="notifications" />
+                <label class="checkbox2-label" for="checkbox2">
+                  <span class="checkbox-icon"></span>
+                  Je Je souhaite être prévenu des prochains évènements.
+                </label>
+                <br>
+              </div>
+            </div>
+            <div class="submission-notification-default">
+              <span>Merci ! Votre réservation a été reçue.</span>
+            </div>
+            <input class="btn-submit" type="submit" class="button" value="C'est parti" />
+          </form>
         </div>
-    </main>
-    <footer>
-        <div class="nav-footer">
-            <a href="index.html">
-                <img src="/images/logo/ohmyfood_footer@2x.svg" alt="oh-my-food"></a>
-            <ul>
-                <li>
-                    <a class="nav-links" href="#">
-                        <span>
-                            <i class="fas fa-utensils"></i>
-                        </span>
-                        Proposer un restaurant
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-links" href="#">
-                        <span>
-                            <i class="fas fa-hands-helping"></i>
-                        </span>
-                        Devenir partenaire
-                    </a>
-                </li>
-                <li><a class="nav-links" href="#">Mentions legales</a></li>
-                <li><a class="nav-links" href="mailto:testAccount@ohmyfood.com">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src=" https://kit.fontawesome.com/c47fc4ef25.js" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="copyrights">
+      Copyright 2014 - 2020, GameOn Inc.
+    </p>
+  </footer>
+  <script src="/js/modal.js"></script>
 </body>
 
 </html>
