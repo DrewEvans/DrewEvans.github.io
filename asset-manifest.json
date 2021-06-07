@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/AndrewEvans_P6_22042020/static/css/main.3fdf6015.chunk.css",
+    "main.js": "/AndrewEvans_P6_22042020/static/js/main.facd6a85.chunk.js",
+    "main.js.map": "/AndrewEvans_P6_22042020/static/js/main.facd6a85.chunk.js.map",
+    "runtime-main.js": "/AndrewEvans_P6_22042020/static/js/runtime-main.2c29abbe.js",
+    "runtime-main.js.map": "/AndrewEvans_P6_22042020/static/js/runtime-main.2c29abbe.js.map",
+    "static/js/2.5f8a1631.chunk.js": "/AndrewEvans_P6_22042020/static/js/2.5f8a1631.chunk.js",
+    "static/js/2.5f8a1631.chunk.js.map": "/AndrewEvans_P6_22042020/static/js/2.5f8a1631.chunk.js.map",
+    "static/css/3.9dc4b6d0.chunk.css": "/AndrewEvans_P6_22042020/static/css/3.9dc4b6d0.chunk.css",
+    "static/js/3.59b5f96e.chunk.js": "/AndrewEvans_P6_22042020/static/js/3.59b5f96e.chunk.js",
+    "static/js/3.59b5f96e.chunk.js.map": "/AndrewEvans_P6_22042020/static/js/3.59b5f96e.chunk.js.map",
+    "index.html": "/AndrewEvans_P6_22042020/index.html",
+    "static/css/3.9dc4b6d0.chunk.css.map": "/AndrewEvans_P6_22042020/static/css/3.9dc4b6d0.chunk.css.map",
+    "static/css/main.3fdf6015.chunk.css.map": "/AndrewEvans_P6_22042020/static/css/main.3fdf6015.chunk.css.map",
+    "static/js/2.5f8a1631.chunk.js.LICENSE.txt": "/AndrewEvans_P6_22042020/static/js/2.5f8a1631.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c29abbe.js",
+    "static/js/2.5f8a1631.chunk.js",
+    "static/css/main.3fdf6015.chunk.css",
+    "static/js/main.facd6a85.chunk.js"
+  ]
+}
