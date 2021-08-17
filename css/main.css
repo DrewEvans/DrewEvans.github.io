@@ -1,0 +1,250 @@
+body {
+  font-family: "Lato";
+  margin: 0.5em 3.5em;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  background-color: #e7e7e7;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+  height: 30px;
+  width: 89%;
+}
+
+.search-bar button {
+  font-size: 24px;
+  background-color: #e7e7e7;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.tag-container .tag {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  margin: 0.35em;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.tag-container .tag p {
+  padding: 0.35em;
+}
+
+.tag-container .tag span {
+  padding: 0.5em;
+}
+
+.tag-container .ingredient-tag {
+  background-color: #3282f7;
+}
+
+.tag-container .ustensil-tag {
+  background-color: #ed6454;
+}
+
+.tag-container .appliance-tag {
+  background-color: #68d9a4;
+}
+
+.button-container {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex start;
+  flex-wrap: wrap;
+  margin-top: 0em;
+  z-index: 1000;
+}
+
+.dropdown-btn {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #3282f7;
+  border-radius: 5px;
+  width: 180px;
+  margin: 2em 4em;
+  cursor: pointer;
+}
+
+.dropdown-btn input {
+  justify-self: flex-start;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-top: 1em;
+  color: white;
+  width: 150px;
+  height: 25px;
+  border: none;
+  background-color: #3282f7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-btn span {
+  position: relative;
+  height: 14px;
+  width: 14px;
+  left: 145px;
+  bottom: 22px;
+  color: white;
+}
+
+.dropdown-btn ::placeholder {
+  font-family: "lato";
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: 0.25em;
+  color: white;
+}
+
+.dropdown-btn :focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.item-container {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.1em;
+  width: 170px;
+  list-style-type: none;
+}
+
+.item-container .tag-item {
+  color: white;
+  width: 162px;
+  font-size: 1em;
+  padding: 0.35em 0.55em;
+  font-weight: 400;
+  list-style: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background-color 150ms;
+}
+
+.item-container :hover {
+  background-color: rgba(207, 207, 207, 0.288);
+}
+
+.appliances-dropdown {
+  background-color: #68d9a4;
+}
+
+.appliances-dropdown input {
+  background-color: #68d9a4;
+}
+
+.utensils-dropdown {
+  background-color: #ed6454;
+}
+
+.utensils-dropdown input {
+  background-color: #ed6454;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#card-container .card {
+  background-color: #e7e7e7;
+  margin: 2em;
+  padding: 0;
+  height: 410px;
+  width: 375px;
+}
+
+#card-container .card .img-block {
+  background-color: #c7bebe;
+  height: 170px;
+}
+
+#card-container .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25em;
+}
+
+#card-container .card .card-body .card-title {
+  font-weight: 400;
+  font-size: 1.2em;
+  width: 75%;
+}
+
+#card-container .card .card-body p {
+  padding-right: 1em;
+  align-self: flex-start;
+}
+
+#card-container .card .card-body p .clock-icon {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
+}
+
+#card-container .card .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 0.25em;
+  font-size: 0.8em;
+}
+
+#card-container .card .details .ingredients-container {
+  margin-bottom: 2px;
+}
+
+#card-container .card .details .ingredients-container ul {
+  padding: 0 0.25em;
+}
+
+#card-container .card .details .ingredients-container ul li {
+  line-height: 1.7;
+  list-style: none;
+}
+
+#card-container .card .details .description {
+  display: -webkit-box;
+  max-width: 400px;
+  height: 120px;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  width: 50%;
+  padding-right: 0.2em;
+}
